@@ -1,0 +1,8 @@
+title Fullstackopen 0.6: Uusi muistiinpano
+
+Client->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Client: 201 application/json; charset=utf-8
+
+note over Client
+No further steps needed
+end note

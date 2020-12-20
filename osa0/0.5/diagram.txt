@@ -1,0 +1,26 @@
+title Fullstackopen 0.5: Single Page App
+
+Client->Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Client: 200 text/html; charset=utf-8
+
+note over Client
+HTML page refers to: 
+- stylesheet /exampleapp/main.css
+- javascript /exampleapp/spa.js
+end note
+
+Client->Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Client: 200 text/css; charset=UTF-8
+Client->Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Client: 200 application/javascript; charset=UTF-8
+
+note over Client
+Browser executes JavaScript code that fetches JSON data
+end note
+
+Client->Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Client: 200 application/json; charset=utf-8
+
+note over Client
+Javascript creates list from JSON data
+end note

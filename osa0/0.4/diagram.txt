@@ -1,0 +1,15 @@
+title Fullstackopen 0.4: uusi muistiinpano
+
+Client->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Client: 302 location: /exampleapp/notes
+
+note over Client
+Client side redirection request
+end note
+
+Client->Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Client: 200 text/html; charset=utf-8
+
+note over Client
+Fully reload the whole page and any referred resources
+end note
